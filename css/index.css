@@ -1,5 +1,6 @@
 #mainPane {
     padding: 20px;
+    background-color: #f6f6f6;
 }
 
 textarea {
@@ -9,6 +10,7 @@ textarea {
     margin: 10px;
     font-family: monospace;
     padding: 5px;
+    border-radius: 5px;
 }
 
 #diffParent {
