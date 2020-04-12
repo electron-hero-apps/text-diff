@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Electron-Hero Diff</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../../css/photon.min.css">
+
+    <!-- Javascript -->
+    <script src="my.js" charset="utf-8"></script>
+
+    <!-- <script src="../../components/resizable_grid/resizable.js"></script>
+    <link rel="stylesheet" href="../../components/resizable_grid/resizable.css"> -->
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jsdiff.js"></script>
+
+    <script>
+        window.$ = window.jQuery = require('jquery');
+        const moment = require('moment');
+    </script>
+
+
+</head>
+
+<body>
+    <div class="window">
+        <div class="window-content">
+            <div class="pane-group">
+                <div id="mainPane" class="pane">
+
+                    <textarea id="one">I am the very model of a modern Major-General,
+I've information vegetable, animal, and mineral,
+I know the kings of England, and I quote the fights historical,
+From Marathon to Waterloo, in order categorical.</textarea>
+
+                    <textarea id="two">I am the very model of a cartoon individual,
+My animation's comical, unusual, and whimsical,
+I'm quite adept at funny gags, comedic theory I have read,
+From wicked puns and stupid jokes to anvils that drop on your head.</textarea>
+
+                    <div id="controls">
+                        <button class="btn btn-large btn-default" onclick="rundiff(1)">Run Diff Semantic</button>
+                        <button class="btn btn-large btn-default" onclick="rundiff(2)">Run Diff Efficiency</button>
+
+                    </div>
+                    <div id="diffParent">
+                        <div id="diff"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <footer class="toolbar toolbar-footer">
+            <div>
+                <div id='leftDiv'>
+                    <h1 class="title">Footer Left</h1>
+                </div>
+                <div id='rightDiv'>
+                    <h1 class="title">Footer Right</h1>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+<script>
+    $(document).ready(function() {
+        //do something here if you want to
+    });
+</script>
+
+</html>

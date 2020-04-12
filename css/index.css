@@ -1,0 +1,63 @@
+#mainPane {
+    padding: 20px;
+}
+
+textarea {
+    float: left;
+    border: 1px solid #999;
+    width: 95%;
+    margin: 10px;
+    font-family: monospace;
+    padding: 5px;
+}
+
+#diffParent {
+    width: 95%;
+    float: left;
+    margin: 10px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    background-color: white;
+}
+
+#diff {
+    font-family: monospace;
+    font-size: 14px;
+    padding: 10px;
+}
+
+#controls {
+    width: 95%;
+    float: left;
+    margin: 10px;
+}
+
+del {
+    background-color: #ffebee;
+    text-decoration: none;
+    color: #888;
+    border: 1px solid #fdafb8;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+ins {
+    background-color: #e2ffea;
+    color: #444;
+    text-decoration: none;
+    border: 1px solid #a3f0b5;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+#leftDiv {
+    float: left;
+    margin-left: 15px;
+}
+
+#rightDiv {
+    float: right;
+    margin-right: 15px;
+}
