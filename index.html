@@ -5,7 +5,7 @@
     <title>Electron-Hero Diff</title>
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="../../css/photon.min.css">
+    <link rel="stylesheet" href="https://www.electron-hero.com/cdn/photon.min.css">
 
     <!-- Javascript -->
     <script src="my.js" charset="utf-8"></script>
@@ -16,8 +16,10 @@
     <script src="js/jsdiff.js"></script>
 
     <script>
-        window.$ = window.jQuery = require('jquery');
-        const moment = require('moment');
+        const ipc = require('electron').ipcRenderer
+        let nodeRequirePath = ipc.sendSync('getRequirePath') + 'node_modules/';
+        window.$ = window.jQuery = require(nodeRequirePath + 'jquery');
+        const moment = require(nodeRequirePath + 'moment');
     </script>
 
 
